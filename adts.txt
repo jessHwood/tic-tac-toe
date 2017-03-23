@@ -1,0 +1,12 @@
+
+
+function Player() {
+	this.tic: "O";
+	this.name: Player1;
+}
+
+var Player1 = new Player();
+var Player2 = new Player();
+
+Player2.tic = "X";
+Player2.name = "Player2";

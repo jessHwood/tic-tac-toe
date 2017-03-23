@@ -23,7 +23,6 @@ $('.box').click(function() {
 
 $('#reset').click(function() {
 	$('.box').html('');
-	$('box').removeClass('won');
 	turn = 0;
 });
 
@@ -54,6 +53,8 @@ function checkWin() {
 	// are all boxes checked?
 	} 	else if (turn === 8) {
 		alert("It's a Tie!");
+	} else {
+
 	}
 }
 
