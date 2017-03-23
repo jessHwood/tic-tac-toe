@@ -1,7 +1,7 @@
 
 
 body {
-	background: lightgrey;
+	background: #003540;
 }
 
 table tr td{
@@ -13,12 +13,19 @@ table {
 	padding: 40px;
 }
 
+.box {
+	font-size: 80px;
+	text-align: center;
+	color: #E6DEFF;
+	font-family: 'Oswald', sans-serif;
+}
+
 #b1, #b2, #b3, #b4, #b5, #b6 {
-	border-bottom: 2px solid black;
+	border-bottom: 3px solid #B6A6CA;
 }
 
 #b1, #b2, #b4, #b5, #b7, #b8 {
-	border-right: 2px solid black;
+	border-right: 3px solid #B6A6CA;
 }
 
 /*reset button ID*/
@@ -29,6 +36,11 @@ button {
 	font-size: 18px;
 	width: 150px;
 	padding: 10px;
+	background: #B6A6CA;
+	color: #003540;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 #gameboard {
@@ -37,11 +49,11 @@ button {
 }
 
 #gameboard tr td:hover { 
-  background: #e4e4e4; 
+  opacity: .5; 
   cursor: pointer; 
 }
 
 .won {
-	background: teal;
+	background: black;
 }
 
