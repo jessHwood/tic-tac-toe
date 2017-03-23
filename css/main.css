@@ -1,0 +1,47 @@
+
+
+body {
+	background: lightgrey;
+}
+
+table tr td{
+	height: 215px;
+	width: 215px;
+}
+
+table {
+	padding: 40px;
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6 {
+	border-bottom: 2px solid black;
+}
+
+#b1, #b2, #b4, #b5, #b7, #b8 {
+	border-right: 2px solid black;
+}
+
+/*reset button ID*/
+button {  
+	text-align: center;
+	display: block;
+	margin: auto;
+	font-size: 18px;
+	width: 150px;
+	padding: 10px;
+}
+
+#gameboard {
+	margin: auto;
+	clear: both;
+}
+
+#gameboard tr td:hover { 
+  background: #e4e4e4; 
+  cursor: pointer; 
+}
+
+.won {
+	background: teal;
+}
+
