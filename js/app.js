@@ -21,46 +21,39 @@ $('.box').click(function() {
 
 });
 
-function checkWin() {
-	if ($('#b1').html()===tic && $('#b2').html()===tic && $('#b3').html()===tic) {
-		$('#b1','#b2','#b3').addClass("won");
-		alert(player + " won!");
-
-	} else if ($('#b4').html()===tic && $('#b5').html()===tic && $('#b6').html()===tic) {
-		$('#b4','#b5','#b6').addClass("won");
-		alert(player + " won!");
-
-	} else if ($('#b7').html()===tic && $('#b8').html()===tic && $('#b9').html()===tic) {
-		$('#b7','#b8','#b9').addClass("won");
-		alert(player + " won!");
-
-	}	else if ($('#b1').html()===tic && $('#b4').html()===tic && $('#b7').html()===tic) {
-		$('#b1','#b4','#b7').addClass("won");
-		alert(player + " won!");
-
-	}	else if ($('#b2').html()===tic && $('#b5').html()===tic && $('#b8').html()===tic) {
-		$('#b2','#b5','#b8').addClass("won");
-		alert(player + " won!");
-
-	}	else if ($('#b3').html()===tic && $('#b6').html()===tic && $('#b9').html()===tic) {
-		$('#b3','#b6','#b9').addClass("won");
-		alert(player + " won!");
-	
-	}	else if ($('#b3').html()===tic && $('#b5').html()===tic && $('#b7').html()===tic) {
-		$('#b3','#b5','#b7').addClass("won");
-		alert(player + " won!");
-	
-	}	else if ($('#b1').html()===tic && $('#b5').html()===tic && $('#b9').html()===tic) {
-		$('#b1','#b5','#b9').addClass("won");
-		alert(player + " won!");
-	
-	} 	else if (turn === 8) {
-		alert("It's a Tie!");
-	}
-}
-
 $('#reset').click(function() {
 	$('.box').html('');
 	$('box').removeClass('won');
 	turn = 0;
 });
+
+function checkWin() {
+	if ($('#b1').html()===tic && $('#b2').html()===tic && $('#b3').html()===tic) {
+		alert(player + " won!");
+
+	} else if ($('#b4').html()===tic && $('#b5').html()===tic && $('#b6').html()===tic) {
+		alert(player + " won!");
+
+	} else if ($('#b7').html()===tic && $('#b8').html()===tic && $('#b9').html()===tic) {
+		alert(player + " won!");
+
+	}	else if ($('#b1').html()===tic && $('#b4').html()===tic && $('#b7').html()===tic) {
+		alert(player + " won!");
+
+	}	else if ($('#b2').html()===tic && $('#b5').html()===tic && $('#b8').html()===tic) {
+		alert(player + " won!");
+
+	}	else if ($('#b3').html()===tic && $('#b6').html()===tic && $('#b9').html()===tic) {
+		alert(player + " won!");
+	
+	}	else if ($('#b3').html()===tic && $('#b5').html()===tic && $('#b7').html()===tic) {
+		alert(player + " won!");
+	
+	}	else if ($('#b1').html()===tic && $('#b5').html()===tic && $('#b9').html()===tic) {
+		alert(player + " won!");
+	// are all boxes checked?
+	} 	else if (turn === 8) {
+		alert("It's a Tie!");
+	}
+}
+
